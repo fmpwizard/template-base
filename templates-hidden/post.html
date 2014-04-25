@@ -4,62 +4,32 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <title data-lift="menu.title"></title>
-    <meta data-lift="BootstrapUtil.headComment">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <style type="text/css">
-        /* Override some defaults */
-        html, body {
-        background-color: #eee;
-        }
-        body {
-        padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
-        }
-        .container > footer p {
-        text-align: center; /* center align it with the container */
-        }
-
-        /* The white background content wrapper */
-        .container > .content {
-        background-color: #fff;
-        padding: 20px;
-        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-        -webkit-border-radius: 0 0 6px 6px;
-        -moz-border-radius: 0 0 6px 6px;
-        border-radius: 0 0 6px 6px;
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-        box-shadow: 0 1px 2px rgba(0,0,0,.15);
-        }
-
-        /* Page header tweaks */
-        .page-header {
-        background-color: #f5f5f5;
-        padding: 20px 20px 10px;
-        margin: -20px -20px 20px;
-        }
-
-        .topbar .btn {
-        border: 0;
-        }
-
-    </style>
+    <title data-lift="menu.title">Title</title>
+    <meta data-lift="BootstrapUtil.headComment" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
    
 </head>
 <body>
-<div data-lift="BootstrapUtil.bodyComment"></div>
-<div class="topbar">
-    <div class="fill">
-        <div class="container">
-            <a data-lift="site.name" class="brand" href="/">Telegram</a>
-            <ul class="nav">
-                <li data-lift="menu.items"><a href="#">Home</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 <div class="container">
-    <div class="content">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a data-lift="site.name" class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li data-lift="menu.items"><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
+      <div class="content">
         <div id="content">Content goes here</div>
     </div>
     <div id="after-content"></div>
@@ -76,11 +46,7 @@
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    <footer style="text-align: center">
-        A <a href="http://twitter.com/dpp">David</a> <a href="http://goodstuff.im">Pollak</a> Thingy •
-        Powered by <a href="http://www.liftweb.net"><i>Lift</i></a> and <a href="http://hoisted.org">Hoisted</a>
-    </footer>
+
 
 </div>
 <script>
@@ -93,7 +59,7 @@
   ga('send', 'pageview');
 
 </script>
-<script type="text/javascript" src="//skyboxanalytics.com/skybox.js" async
+<script type="text/javascript" src="//skyboxanalytics.com/skybox.js" async="true"
   data-api-key="dd43b218-d1f5-49ae-4351-b9a191624a77">
 </script>
 
