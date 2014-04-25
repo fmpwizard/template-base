@@ -7,7 +7,7 @@
     <title data-lift="menu.title"></title>
     <meta data-lift="BootstrapUtil.headComment">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <style type="text/css">
+<!--    <style type="text/css">
         /* Override some defaults */
         html, body {
         background-color: #eee;
@@ -43,28 +43,33 @@
         border: 0;
         }
     </style>
+    -->
 </head>
 <body>
-<div data-lift="BootstrapUtil.bodyComment"></div>
-<div class="topbar">
-    <div class="fill">
-        <div class="container">
-            <a data-lift="site.name" class="brand" href="/">Telegram</a>
-            <ul class="nav">
-                <li data-lift="menu.items"><a href="#">Home</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 <div class="container">
-    <div class="content">
-        <div id="content">Content goes here</div>
-    </div>
-    <footer style="text-align: center">
-        A <a href="http://twitter.com/dpp">David</a> <a href="http://goodstuff.im">Pollak</a> Thingy •
-        Powered by <a href="http://www.liftweb.net"><i>Lift</i></a> and <a href="http://hoisted.org">Hoisted</a>
-    </footer>
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a data-lift="site.name" class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li data-lift="menu.items"><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
 
+      <!-- Main component for a primary marketing message or call to action -->
+      <div id="content"></div>
+
+    </div>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
